@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Daisy Ui $ Tailwind -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .font-adlam {
+        font-family: "ADLaM Display", serif;
+      }
+      .font-sora {
+        font-family: "Sora", serif;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "pet-primary": "#FFF9F4",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- Font Awesome  -->
+    <script
+      src="https://kit.fontawesome.com/a6137a359e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+    <body class="font-sora bg-white">
+      <header>
+        <!-- Full-width navbar -->
+        <div class="w-full bg-pet-primary">
+          <div class="navbar max-w-7xl mx-auto text-black space-x-20">
+            <div class="flex-1">
+              <img src="c1-assets/logo-header.png" alt="">
+              <a class="btn btn-ghost text-xl">Browse <span class="text">4</span>Pets</a>
+            </div>
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost md:hidden lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+              </div>
+              <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] -ml-12 w-48 p-4 shadow">
+                <li><a>Find a Pet</a></li>
+                <li><a>Breeds</a></li>
+                <li><a>Contact us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-center hidden md:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Find a Pet</a></li>
+                <li><a>Breeds</a></li>
+                <li><a>Contact us</a></li>
+              </ul>
+            </div>
+            <div class="hidden gap-4 md:flex">
+              <i class="fa-regular fa-bell cursor-pointer"></i>
+              <i class="fa-solid fa-magnifying-glass cursor-pointer"></i>
+              <button class="btn btn-outline btn-warning text-black font-medium">Login</button>
+              <button class="btn btn-warning font-medium">Register</button>
+            </div>
+          </div>
+        </div>
+      </header>
+    </body>
+    
+    <div class="px-4 md:max-w-7xl mx-auto">
+      <!-- Text section -->
+      <div class="w-2/6 space-y-6 mt-24 absolute z-50">
+        <h1 class="font-adlam text-5xl w-5/6 leading-snug">
+          Pamper Your Pet, Because They Deserve the Best
+        </h1>
+    
+        <p class="text-gray-500">
+          Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!
+        </p>
+    
+        <button class="btn btn-warning font-medium">Find a pet</button>
+      </div>
+    
+      <!-- Image section with margin-top to create spacing -->
+      <div class="md:relative lg:relative">
+        <img src="c1-assets/cat-big.png" alt="Cat Image" class="w-full h-auto lg:max-w-7xl mx-auto">
+      </div>
+    </div>
+    
+    
+  
+  
+    <main></main>
+    <footer></footer>
+  </body>
+</html>
